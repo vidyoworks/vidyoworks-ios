@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginWindow">
+            <connections>
+                <outlet property="guestLoginButton" destination="9s3-JZ-GKV" id="YYc-ln-uTk"/>
+                <outlet property="guestPortal" destination="Z0p-In-tof" id="Ych-GV-ybC"/>
+                <outlet property="guestnameField" destination="tGH-tC-flk" id="shz-fc-aHq"/>
+                <outlet property="joinMyRoomButton" destination="8" id="26"/>
+                <outlet property="loginButton" destination="5" id="25"/>
+                <outlet property="passwordField" destination="16" id="24"/>
+                <outlet property="roomKeyField" destination="ow6-V2-u9e" id="vos-fq-GlI"/>
+                <outlet property="roomPinField" destination="rXR-pe-FDb" id="LwG-w9-B0C"/>
+                <outlet property="usernameField" destination="15" id="23"/>
+                <outlet property="vidyoPortal" destination="18" id="22"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="618"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="VidyoClient iOS Sample" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="16" y="32" width="282" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <view contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="gLU-Lw-h6O" userLabel="Guest Join">
+                    <rect key="frame" x="0.0" y="54" width="314" height="246"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4Dl-LH-VaQ">
+                            <rect key="frame" x="16" y="8" width="282" height="134"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="X0X-e3-fPk">
+                                    <rect key="frame" x="0.0" y="0.0" width="282" height="41.5"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="VidyoPortal" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5U4-ii-PnE">
+                                            <rect key="frame" x="0.0" y="0.0" width="141" height="41.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://portaladdress" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Z0p-In-tof">
+                                            <rect key="frame" x="141" y="0.0" width="141" height="41.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="next"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="VlF-3a-jM6"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Fap-dh-GAU">
+                                    <rect key="frame" x="0.0" y="45.5" width="282" height="30"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="RoomKey" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="AFZ-HC-Iq4">
+                                            <rect key="frame" x="0.0" y="0.0" width="141" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="roomkey" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ow6-V2-u9e">
+                                            <rect key="frame" x="141" y="0.0" width="141" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="next"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="dmd-wB-oCh"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2KX-wY-YpK">
+                                    <rect key="frame" x="0.0" y="79.5" width="282" height="30"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" text="GuestName" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6fn-th-rV8">
+                                            <rect key="frame" x="0.0" y="0.0" width="141" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="guestname" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tGH-tC-flk">
+                                            <rect key="frame" x="141" y="0.0" width="141" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="next"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="Et9-6u-4VP"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rbI-Mf-KDF">
+                                    <rect key="frame" x="0.0" y="113.5" width="282" height="20.5"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalCompressionResistancePriority="751" text="RoomPin" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="OEd-Nb-RGa">
+                                            <rect key="frame" x="0.0" y="0.0" width="141" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="room pin if any" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rXR-pe-FDb">
+                                            <rect key="frame" x="141" y="0.0" width="141" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="next"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="AKQ-Xj-eNM"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="2KX-wY-YpK" firstAttribute="top" secondItem="4Dl-LH-VaQ" secondAttribute="top" constant="79.5" id="BqT-QX-yAq"/>
+                                <constraint firstItem="rbI-Mf-KDF" firstAttribute="top" secondItem="4Dl-LH-VaQ" secondAttribute="top" constant="113.5" id="bop-6J-sIJ"/>
+                                <constraint firstItem="Fap-dh-GAU" firstAttribute="top" secondItem="4Dl-LH-VaQ" secondAttribute="top" constant="45.5" id="tx3-yp-nxG"/>
+                            </constraints>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9s3-JZ-GKV" userLabel="login">
+                            <rect key="frame" x="16" y="158" width="282" height="32"/>
+                            <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="aJ5-s0-q7P"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" title="Guest Login"/>
+                            <connections>
+                                <action selector="buttonGuestPressed:" destination="-1" eventType="touchUpInside" id="l1c-Vo-gck"/>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchDown" id="92S-cd-l8x"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Eb-zf-ULQ">
+                            <rect key="frame" x="16" y="198" width="282" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="ote-UU-uKF"/>
+                            </constraints>
+                            <state key="normal" title="SEND LOGS"/>
+                            <connections>
+                                <action selector="sendLogs:" destination="-1" eventType="touchUpInside" id="GXF-Hi-7ki"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="4Dl-LH-VaQ" firstAttribute="top" secondItem="gLU-Lw-h6O" secondAttribute="top" constant="8" id="3ra-yi-s8c"/>
+                        <constraint firstAttribute="trailing" secondItem="9s3-JZ-GKV" secondAttribute="trailing" constant="16" id="5vo-Z6-ucY"/>
+                        <constraint firstAttribute="trailing" secondItem="0Eb-zf-ULQ" secondAttribute="trailing" constant="16" id="Shg-zi-owM"/>
+                        <constraint firstAttribute="trailing" secondItem="4Dl-LH-VaQ" secondAttribute="trailing" constant="16" id="Xse-wT-smh"/>
+                        <constraint firstAttribute="bottom" secondItem="0Eb-zf-ULQ" secondAttribute="bottom" constant="16" id="eRp-ir-30d"/>
+                        <constraint firstItem="9s3-JZ-GKV" firstAttribute="leading" secondItem="gLU-Lw-h6O" secondAttribute="leading" constant="16" id="eha-Q6-TK7"/>
+                        <constraint firstItem="0Eb-zf-ULQ" firstAttribute="top" secondItem="9s3-JZ-GKV" secondAttribute="bottom" constant="8" id="fk9-42-vba"/>
+                        <constraint firstItem="0Eb-zf-ULQ" firstAttribute="leading" secondItem="gLU-Lw-h6O" secondAttribute="leading" constant="16" id="oGb-8X-sCk"/>
+                        <constraint firstItem="4Dl-LH-VaQ" firstAttribute="leading" secondItem="gLU-Lw-h6O" secondAttribute="leading" constant="16" id="oVy-da-hw1"/>
+                        <constraint firstItem="9s3-JZ-GKV" firstAttribute="top" secondItem="4Dl-LH-VaQ" secondAttribute="bottom" constant="16" id="vh9-La-GB2"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPu-QT-zcD" userLabel="Login">
+                    <rect key="frame" x="0.0" y="300" width="314" height="318"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Username" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="13">
+                            <rect key="frame" x="24" y="63" width="79" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="14">
+                            <rect key="frame" x="22" y="100" width="75" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="15">
+                            <rect key="frame" x="122" y="58" width="178" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="20"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="16">
+                            <rect key="frame" x="122" y="97" width="177" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="21"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="VidyoPortal" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                            <rect key="frame" x="20" y="27" width="87" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://portalAddress" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                            <rect key="frame" x="123" y="20" width="177" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="next"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="19"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5" userLabel="login">
+                            <rect key="frame" x="36" y="136" width="214" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" title="Login to VidyoPortal"/>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchDown" id="6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8" userLabel="linkendpoint">
+                            <rect key="frame" x="36" y="180" width="214" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" title="Join My Conference Room">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="12"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qH5-an-U5F" userLabel="singOut">
+                            <rect key="frame" x="36" y="225" width="214" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" title="Sign Out">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="xV2-vw-JbU"/>
+                                <action selector="singOutPressed:" destination="-1" eventType="touchUpInside" id="ccd-af-CbT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SPu-QT-zcD" firstAttribute="top" secondItem="gLU-Lw-h6O" secondAttribute="bottom" id="4b7-ek-1Rs"/>
+                <constraint firstItem="SPu-QT-zcD" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="7wj-yX-Ck9"/>
+                <constraint firstAttribute="bottom" secondItem="SPu-QT-zcD" secondAttribute="bottom" id="FJG-N1-Pll"/>
+                <constraint firstItem="gLU-Lw-h6O" firstAttribute="top" secondItem="4" secondAttribute="bottom" constant="8" id="HIV-Uy-nnQ"/>
+                <constraint firstAttribute="trailing" secondItem="gLU-Lw-h6O" secondAttribute="trailing" id="OGD-q2-6Y9"/>
+                <constraint firstItem="SPu-QT-zcD" firstAttribute="top" secondItem="1" secondAttribute="top" constant="300" id="Uzv-4S-7Zs"/>
+                <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" constant="16" id="f1V-NL-alz"/>
+                <constraint firstItem="gLU-Lw-h6O" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="nuu-hu-eKb"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="1" secondAttribute="top" constant="32" id="qwO-G1-iIN"/>
+                <constraint firstAttribute="trailing" secondItem="SPu-QT-zcD" secondAttribute="trailing" id="uCD-a9-USD"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="16" id="yp1-ft-wdG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.43478260869566" y="190.84821428571428"/>
+        </view>
+    </objects>
+</document>
