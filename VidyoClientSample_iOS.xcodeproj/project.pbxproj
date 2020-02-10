@@ -102,22 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1977A00323F17A490011337F /* lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = lib;
-			path = VidyoClientLibrary/lib;
-			sourceTree = "<group>";
-		};
-		1977A00523F17A4A0011337F /* include */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = include;
-			path = VidyoClientLibrary/include;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,8 +159,6 @@
 		55563F13174A9BD2002416B3 /* VidyoClientLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				1977A00523F17A4A0011337F /* include */,
-				1977A00323F17A490011337F /* lib */,
 				55263676174BCA4D007219D6 /* certificates */,
 			);
 			name = VidyoClientLibrary;
