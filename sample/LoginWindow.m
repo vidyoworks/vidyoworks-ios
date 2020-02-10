@@ -25,18 +25,20 @@
 @synthesize vidyoEntityID, vidyoMemberStatus, vidyoClientStatus;
 @synthesize signingInAlert, isSigningIn;
 
+/* Set Guest Join credentials */
+-(void)setGuestCredentials {
+ 	[guestPortal setText:@"http://<TenantName>.sandboxga.vidyo.com"];
+    [guestnameField setText:@"GuestName"];
+    [roomKeyField setText:@"RoomKeyXXXXXXXX"];
+    [roomPinField setText:@""];
+}
+
+/* Login cred. Hidden */
 - (void) setCredentials {
 	[vidyoPortal setText:@"http://<TenantName>.sandboxga.vidyo.com"];
 	[usernameField setText:@"username"];
 	[passwordField setText:@"password"];
     
-}
-
--(void)setGuestCredentials {
-    [guestPortal setText:@"http://<TenantName>.sandboxga.vidyo.com"];
-    [guestnameField setText:@"GuestName"];
-    [roomKeyField setText:@"RoomKeyXXXXXXXX"];
-    [roomPinField setText:@""];
 }
 
 -(void) viewDidLoad
