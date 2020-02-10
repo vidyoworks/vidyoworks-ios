@@ -7,5 +7,5 @@ https://support.vidyocloud.com/hc/en-us/articles/115003651834-VidyoWorks-API-Dow
 
 1. Download latest iOS VidyoClient SDK at: https://support.vidyocloud.com/hc/en-us/articles/115003651834-VidyoWorks-API-Downloads-
 2. Unzip the package and observe "include" & "lib" folders inside.
-3. Copy "include" & "lib" folder into "VidyoClientLibrary" folder.
+3. Copy "include" & "lib" folder into "VidyoClientLibrary" folder (Link them in project via "Add new files...).
 4. Install ZipArchiver dependency via "pod install" command.
