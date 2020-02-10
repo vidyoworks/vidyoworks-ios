@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
                BuildableName = "VidyoClient Sample.app"
-               BlueprintName = "VidyoClientSample"
-               ReferencedContainer = "container:VidyoClientSample.xcodeproj">
+               BlueprintName = "VidyoClientSample_iOS"
+               ReferencedContainer = "container:VidyoClientSample_iOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,8 +47,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
             BuildableName = "VidyoClient Sample.app"
-            BlueprintName = "VidyoClientSample"
-            ReferencedContainer = "container:VidyoClientSample.xcodeproj">
+            BlueprintName = "VidyoClientSample_iOS"
+            ReferencedContainer = "container:VidyoClientSample_iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,8 +64,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
             BuildableName = "VidyoClient Sample.app"
-            BlueprintName = "VidyoClientSample"
-            ReferencedContainer = "container:VidyoClientSample.xcodeproj">
+            BlueprintName = "VidyoClientSample_iOS"
+            ReferencedContainer = "container:VidyoClientSample_iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

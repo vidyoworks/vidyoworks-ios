@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/taras.melko/Documents/Vidyo/works/GitHub/vidyoworks-ios/VidyoClientSample.xcodeproj">
+      location = "group:/Users/taras.melko/Documents/Vidyo/works/GitHub/vidyoworks-ios/VidyoClientSample_iOS.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:VidyoClientSample_iOS.xcodeproj">
    </FileRef>
 </Workspace>
