@@ -239,9 +239,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* VidyoClientSample_iOS */ = {
+		1D6058900D05DD3D006BFB54 /* VidyoClientSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "VidyoClientSample_iOS" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "VidyoClientSample" */;
 			buildPhases = (
 				059C9CB1645947DDC7FB83F7 /* [CP] Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
@@ -253,7 +253,7 @@
 			);
 			dependencies = (
 			);
-			name = VidyoClientSample_iOS;
+			name = VidyoClientSample;
 			productName = NoGuiClient;
 			productReference = 1D6058910D05DD3D006BFB54 /* VidyoClient Sample.app */;
 			productType = "com.apple.product-type.application";
@@ -277,7 +277,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "VidyoClientSample_iOS" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "VidyoClientSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -289,7 +289,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* VidyoClientSample_iOS */,
+				1D6058900D05DD3D006BFB54 /* VidyoClientSample */,
 			);
 		};
 /* End PBXProject section */
@@ -478,7 +478,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "VidyoClientSample_iOS" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "VidyoClientSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -487,7 +487,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "VidyoClientSample_iOS" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "VidyoClientSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
