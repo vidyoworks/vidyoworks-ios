@@ -210,7 +210,7 @@
     logParams.pathToLogDir = pathToLogDir;
     logParams.logSize = 1024 * 1024 * 100;
     
-    logParams.logLevelsAndCategories = "All@All";
+    logParams.logLevelsAndCategories = "fatal error warning all@AppVcsoapClient debug@App info@AppEmcpClient debug@AppGui info@AppGui";
     
 //    logParams.logLevelsAndCategories = "All@All fatal error warning all@AppVcsoapClient debug@App info@AppEmcpClient debug@AppGui info@AppGui";
     
